@@ -63,12 +63,12 @@ public class Log {
 	public static void initLogs() {
 		try {
 			String date = Calendar.getInstance().get(Calendar.DAY_OF_MONTH)+"-"+(Calendar.getInstance().get(Calendar.MONTH)+1)+"-"+Calendar.getInstance().get(Calendar.YEAR);
-			Log.Log_GameSock = new BufferedWriter(new FileWriter("Game_logs/"+date+"_packets.txt", true));
-			Log.Log_Game = new BufferedWriter(new FileWriter("Game_logs/"+date+".txt", true));
-			Log.Log_Realm = new BufferedWriter(new FileWriter("Realm_logs/"+date+".txt", true));
-			Log.Log_RealmSock = new BufferedWriter(new FileWriter("Realm_logs/"+date+"_packets.txt", true));
-			Log.Log_Shop = new BufferedWriter(new FileWriter("Shop_logs/"+date+".txt", true));
-			Server.config.setPs(new PrintStream(new File("Error_logs/"+date+"_error.txt")));
+			Log.Log_GameSock = new BufferedWriter(new FileWriter("logs/Game_logs/"+date+"_packets.txt", true));
+			Log.Log_Game = new BufferedWriter(new FileWriter("logs/Game_logs/"+date+".txt", true));
+			Log.Log_Realm = new BufferedWriter(new FileWriter("logs/Realm_logs/"+date+".txt", true));
+			Log.Log_RealmSock = new BufferedWriter(new FileWriter("logs/Realm_logs/"+date+"_packets.txt", true));
+			Log.Log_Shop = new BufferedWriter(new FileWriter("logs/Shop_logs/"+date+".txt", true));
+			Server.config.setPs(new PrintStream(new File("logs/Error_logs/"+date+"_error.txt")));
 			Server.config.getPs().append("Lancement du serveur..\n");
 			Server.config.getPs().flush();
 			System.setErr(Server.config.getPs());
@@ -88,7 +88,7 @@ public class Log {
 			Log.Log_RealmSock.flush();
 			Log.Log_Shop.flush();
 		}catch(IOException e) {
-			/*On créer les dossiers*/
+			/*On crï¿½er les dossiers*/
 			Console.instance.println("Les fichiers de logs n'ont pas pu etre creer");
 			Console.instance.println("Creation des dossiers");
 			new File("Shop_logs").mkdir(); 

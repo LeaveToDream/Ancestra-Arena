@@ -22,8 +22,8 @@ import core.Server;
 public class RealmServer {
 	public static int _totalNonAbo = 0;//Total de connections non abo
 	public static int _totalAbo = 0;//Total de connections abo
-	public static int _queueID = -1;//Numéro de la queue
-	public static int _subscribe = 1;//File des non abonnées (0) ou abonnées (1)
+	public static int _queueID = -1;//Numï¿½ro de la queue
+	public static int _subscribe = 1;//File des non abonnï¿½es (0) ou abonnï¿½es (1)
 	
 	private Map<Long, RealmClient> clients = new HashMap<>();
 	private IoAcceptor acceptor;
@@ -39,8 +39,9 @@ public class RealmServer {
 	}
 	
 	public void initialize() {
-		try { 
-			acceptor.bind(new InetSocketAddress(Server.config.getRealmPort()));
+		try {
+			InetSocketAddress addr = new InetSocketAddress(Server.config.getRealmPort());
+			acceptor.bind(addr);
 		} catch (IOException e) {
 			Console.instance.writeln("NioSocket ERROR: "+e.getMessage());
 			System.exit(1);

@@ -43,13 +43,16 @@ public class Server {
 	private String databaseName;
 	
 	//network
+	private boolean ipLoopBack;
 	private boolean useIp;
 	private String ip;
 	private int realmPort, gamePort;
-	
+	private int socketTimeCompactData = 200;
+
 	//on player connection
 	private String motd, motdColor;
 	private PrintStream ps;
+	private boolean policy;
 	
 	//player
 	private int maxPlayersPerAccount;
@@ -110,6 +113,7 @@ public class Server {
 			this.useIp = !configFile.getBoolean("network.local");
 			this.realmPort = configFile.getInt("network.realmPort");
 			this.gamePort = configFile.getInt("network.gamePort");
+			this.socketTimeCompactData = configFile.getInt("network.socketTimeCompactData");
 			
 			//on player connected
 			this.maxPlayersPerAccount = configFile.getInt("onClientConnected" +
@@ -373,6 +377,7 @@ public class Server {
 	public String getPass() {
 		return pass;
 	}
+
 	public long getFloodTime() {
 		return floodTime;
 	}
@@ -395,6 +400,10 @@ public class Server {
 
 	public PrintStream getPs() {
 		return ps;
+	}
+
+	public boolean isPolicy() {
+		return this.policy;
 	}
 
 	public int getRealmPort() {
@@ -456,6 +465,8 @@ public class Server {
 	public int getRateXpPvp() {
 		return rateXpPvp;
 	}
+
+	public boolean isIpLoopBack() { return ipLoopBack; }
 
 	public int getAverageLevelPvp() {
 		return averageLevelPvp;
@@ -533,6 +544,8 @@ public class Server {
 		return noInHdv;
 	}
 
+	public int getSocketTimeCompactData() { return this.socketTimeCompactData; }
+
 	public void setRunning(boolean isRunning) {
 		this.isRunning = isRunning;
 	}
@@ -564,4 +577,5 @@ public class Server {
 	public String getDatabaseName() {
 		return databaseName;
 	}
+
 }
