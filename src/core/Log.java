@@ -72,7 +72,7 @@ public class Log {
 			Server.config.getPs().append("Lancement du serveur..\n");
 			Server.config.getPs().flush();
 			System.setErr(Server.config.getPs());
-			Log.Log_MJ = new BufferedWriter(new FileWriter("Gms_logs/"+date+"_GM.txt",true));
+			Log.Log_MJ = new BufferedWriter(new FileWriter("logs/Gms_logs/"+date+"_GM.txt",true));
 			Server.config.setCanLog(true);
 			String str = "Lancement du serveur...\n";
 			Log.Log_GameSock.write(str);
@@ -89,14 +89,15 @@ public class Log {
 			Log.Log_Shop.flush();
 		}catch(IOException e) {
 			/*On cr�er les dossiers*/
-			Console.instance.println("Les fichiers de logs n'ont pas pu etre creer");
-			Console.instance.println("Creation des dossiers");
-			new File("Shop_logs").mkdir(); 
-			new File("Game_logs").mkdir(); 
-			new File("Realm_logs").mkdir(); 
-			new File("Gms_logs").mkdir(); 
-			new File("Error_logs").mkdir();
-			Console.instance.println(e.getMessage());
+			System.out.println("Les fichiers de logs n'ont pas pu etre creer");
+			System.out.println("Creation des dossiers");
+			new File("logs").mkdir();
+			new File("logs/Shop_logs").mkdir();
+			new File("logs/Game_logs").mkdir();
+			new File("logs/Realm_logs").mkdir();
+			new File("logs/Gms_logs").mkdir();
+			new File("logs/Error_logs").mkdir();
+			System.out.println(e.getMessage());
 			System.exit(1);
 		}
 	}

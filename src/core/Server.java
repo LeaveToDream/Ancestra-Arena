@@ -3,6 +3,8 @@ package core;
 import game.GameServer;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -93,10 +95,10 @@ public class Server {
 	
 	//Config
 	private Config configFile = ConfigFactory.parseFile(new File("config.conf"));
-	
+
 	public void initialize() {
 		Log.initLogs();
-		
+
 		try {
 			//console
 			this.debug = configFile.getBoolean("console.debug");
@@ -116,8 +118,7 @@ public class Server {
 			this.socketTimeCompactData = configFile.getInt("network.socketTimeCompactData");
 			
 			//on player connected
-			this.maxPlayersPerAccount = configFile.getInt("onClientConnected" +
-					".maxPlayersPerAccount");
+			this.maxPlayersPerAccount = configFile.getInt("onClientConnected.maxPlayersPerAccount");
 			this.startLevel = configFile.getInt("onClientConnected.startLevel");
 			this.startMap = (short)configFile.getInt("onClientConnected.startMap");
 			this.startCell = configFile.getInt("onClientConnected.startCell");

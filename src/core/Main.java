@@ -40,18 +40,21 @@ public class Main {
 		int time = World.data.initialize();
 		
 		Server.config.setRunning(true);
-		
+
+
 		//gameserver
 		GameServer gameServer = new GameServer();
 		gameServer.initialize();
 		gameServer.scheduleActions();
 		Server.config.setGameServer(gameServer);
-		
+		console.writeln(" ~ Lancement du monde sur le port "+Server.config.getGamePort());
+
 		//realmserver
 		RealmServer realmServer = new RealmServer();
 		realmServer.initialize();
 		Server.config.setRealmServer(realmServer);
-		
+		console.writeln(" ~ Lancement du royaume sur le port "+Server.config.getRealmPort());
+
 		
 		//serveur lanc�
 		console.writeln(" > Lancement du serveur termine : "+ time +" ms");
