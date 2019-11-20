@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ancestra-Evolutive-Github:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ancestra_Evolutive_Github_jar</output-path>
+    <root id="archive" name="Ancestra-Evolutive-Github.jar">
+      <element id="module-output" name="Ancestra-Evolutive-Github" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/com.typesafe.config.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-cli-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-logging-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jep.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/joda-time-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mina-core-2.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mysql.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/slf4j-api-1.6.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
