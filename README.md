@@ -16,10 +16,10 @@ Based on a fork of Ancestra, this project aims to build a 1.29 "Goultarminator" 
 
 [WIP] The core server runs the actual engine and let the players brawl
 
-* [\*] Setup server
+* [x] Setup server
 * [ ] Dockerise server
-* [\*] Setup DB
-* [\*] Dockerise DB
+* [x] Setup DB
+* [x] Dockerise DB
 
  
 # About the core
