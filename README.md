@@ -1,16 +1,27 @@
-Ancestra-Evolutive
+Ancestra-Arena
 ==================
 
-Ancestra Evolutive is my public projet start the 3th of March,
-stopped on 20/03/2014.
+# Context
+Based on a fork of Ancestra, this project aims to build a 1.29 "Goultarminator" emulator.
 
-I searched to discover more about java, i've seen DAO & mina pattern,
-and that's good to improve the emulator (before, 1 player equals 1 thread, now, it's 1 thread to all clients)
+[WIP] First a web page allow to sign up and choose the class & archetype of the 3/4 members of your team.
 
-I've "import" the lazy-load too, and the emulator load now in 200ms, against 15 000ms (the used memory is improved too).
-I've created some tools too, to try abstract/interface class, and that was a good experience :) !
+* [ ] Setup web page & system
+* [ ] Equilibrate classes & archetypes 
+* [ ] Dockerise
 
-If you want to see my last commits: https://bitbucket.org/Romain-P/ancestra-evolutive/src
+[WIP] A web hosted 1.29 client accessible via navigator should allow connection to the game.
 
-(The "before" folder contains Ancestra Remake (before Ancestra Evolutive))
-Thanks for your watching.
+* [ ] Investigate how to run a swf in web page 
+
+[WIP] The core server runs the actual engine and let the players brawl
+
+* [\*] Setup server
+* [ ] Dockerise server
+* [\*] Setup DB
+* [\*] Dockerise DB
+
+ 
+# About the core
+Ancestra Evolutive is a public 1.29 private server project from Romain-P. See https://bitbucket.org/Romain-P/ancestra-evolutive/ for more information.
+
