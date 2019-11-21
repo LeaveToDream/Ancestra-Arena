@@ -3,7 +3,7 @@
 	<groupId>org.klv.john</groupId>
 	<artifactId>ancestra-core</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>Ancestra-arena core</name>
 	<url>https://github.com/LeaveToDream/Ancestra-Arena</url>
 
@@ -72,7 +72,7 @@
 		<connection>scm:git:git@github.com:LeaveToDream/Ancestra-Arena.git</connection>
 		<developerConnection>scm:git:git@github.com:LeaveToDream/Ancestra-Arena.git</developerConnection>
 		<url>https://github.com/LeaveToDream/Ancestra-Arena</url>
-		<tag>ancestra-core-1.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
