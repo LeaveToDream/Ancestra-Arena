@@ -70,8 +70,8 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:https://github.com/LeaveToDream/Ancestra-Arena.git</connection>
-		<developerConnection>scm:git:https://github.com/LeaveToDream/Ancestra-Arena.git</developerConnection>
+		<connection>scm:git:git@github.com:LeaveToDream/Ancestra-Arena.git</connection>
+		<developerConnection>scm:git:git@github.com:LeaveToDream/Ancestra-Arena.git</developerConnection>
 		<url>https://github.com/LeaveToDream/Ancestra-Arena</url>
 		<tag>HEAD</tag>
 	</scm>
