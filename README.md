@@ -26,5 +26,5 @@ Based on a fork of Ancestra, this project aims to build a 1.29 "Goultarminator" 
 
  
 # About the core
-Ancestra Evolutive is a public 1.29 private server project from Romain-P. See https://bitbucket.org/Romain-P/ancestra-evolutive/ for more information.
+Ancestra Evolutive is a public 1.29 private server project from Romain-P. See https://github.com/Romain-P/Ancestra-Evolutive/ for more information.
 
