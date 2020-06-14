@@ -2,13 +2,13 @@ version: '3'
 services:
         db:
                 container_name: ancestra_db
-                image: ancestra-db
+                image: leavetodream/ancestra-db
                 ports:
                         - "3306:3306"
 
         core:
                 container_name: ancestra_core
-                image: ancestra-core
+                image: leavetodream/ancestra-core
                 depends_on:
                         - "db"
                 links:
@@ -21,7 +21,7 @@ services:
 
         lang:
                 container_name: ancestra_lang
-                image: ancestra-lang
+                image: leavetodream/ancestra-lang
                 ports:
                         - "5557:80"
 
