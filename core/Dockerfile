@@ -20,4 +20,4 @@ EXPOSE 5555
 
 EXPOSE 5556
 
-CMD java -jar ancestra.jar
+CMD while true; do java -jar ancestra.jar ; sleep 3; done 
