@@ -28,3 +28,5 @@ Based on a fork of Ancestra, this project aims to build a 1.29 "Goultarminator" 
 # About the core
 Ancestra Evolutive is a public 1.29 private server project from Romain-P. See https://github.com/Romain-P/Ancestra-Evolutive/ for more information.
 
+# Thanks
+Thank to [nowaylab](https://github.com/nowaylab/dofusretro-langs-scrapper) for the lang scrapper of version 1.29+.
