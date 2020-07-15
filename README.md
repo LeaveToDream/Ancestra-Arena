@@ -22,9 +22,9 @@ Based on a fork of Ancestra, this project aims to build a 1.29 "Goultarminator" 
 * [x] Dockerise DB
 * [x] Setup lang (client update) http endpoint
 * [x] Compose server, db & lang
-* [ ] Store docker img in the cloud for an easy initial setup
-
+* [x] Store docker img in the cloud for an easy initial setup
  
+
 # About the core
 Ancestra Evolutive is a public 1.29 private server project from Romain-P. See https://github.com/Romain-P/Ancestra-Evolutive/ for more information.
 
